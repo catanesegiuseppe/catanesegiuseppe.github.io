@@ -1,54 +1,767 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Giuseppe Catanese — QA Architect & Lead. Quality strategy, test architecture, team leadership and release governance. Exploring Head of QA and QA Director opportunities."><meta name="theme-color" content="#10131c"><title>Giuseppe Catanese | QA Architect & Lead</title><style>@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
-:root{--bg:#10131c;--panel:#191d29;--line:#303442;--muted:#a5abba;--ink:#f3f3ed;--lime:#d4f879;--purple:#ac9aff}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:100px}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 'DM Sans',sans-serif}h1,h2,h3,.logo{font-family:'Space Grotesk',sans-serif}h1,h2,h3,p{margin-top:0}h1{font-size:clamp(42px,5.1vw,72px);line-height:1.09;letter-spacing:-3px;margin-bottom:26px}h2{font-size:clamp(32px,3.5vw,48px);line-height:1.17;letter-spacing:-1.5px}h3{font-size:22px;line-height:1.35}em{font-style:normal;color:var(--lime)}a{color:inherit;text-decoration:none}button,a,summary{touch-action:manipulation}button{font:inherit;color:inherit;background:none;border:1px solid var(--line);border-radius:6px;padding:9px 14px;cursor:pointer}button:hover,.button:hover{border-color:var(--lime);color:var(--lime)}a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--purple);outline-offset:5px}header{max-width:1440px;margin:auto;padding:24px 4%;display:flex;align-items:center;gap:26px;border-bottom:1px solid var(--line)}.logo{font-size:12px;font-weight:700;letter-spacing:1px;display:flex;align-items:center;gap:12px;margin-right:auto}.mark{font-size:23px;letter-spacing:-1.5px;color:var(--lime);border:1px solid var(--lime);padding:0 7px}.slash{color:var(--muted)}nav{display:flex;gap:26px;font-size:13px}nav a:hover{color:var(--lime)}#mode{font-size:12px}.wrap{max-width:1200px;margin:auto;padding-left:36px;padding-right:36px}.hero{padding-top:70px;padding-bottom:60px}.eyebrow,.tiny,.tag{font:11px/1.5 monospace;letter-spacing:1.6px;color:var(--muted)}.eyebrow{display:block;margin-bottom:24px}.live{display:inline-block;width:7px;height:7px;background:var(--lime);border-radius:50%;margin-right:8px;box-shadow:0 0 12px #d4f87966}.hero-grid{display:grid;grid-template-columns:1.8fr 1fr;gap:70px;align-items:center}.intro{font-size:20px;max-width:590px;color:#c4c8d1}.sub{font-size:13px;color:var(--muted);max-width:550px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.button{display:inline-flex;align-items:center;gap:28px;padding:13px 20px;border:1px solid var(--line);border-radius:5px;font-size:13px;font-weight:600}.primary{background:var(--lime);color:#18201a;border-color:var(--lime)}.primary:hover{background:#e2ffa0;color:#18201a}.hero-notes{display:flex;gap:28px;margin-top:38px;font:11px monospace;color:var(--muted)}.profile{padding:25px;background:linear-gradient(145deg,#222637,#181d27);border:1px solid #414656;border-radius:12px;transform:rotate(2deg);box-shadow:12px 12px 0 #0b0e15}.avatar{font:bold 42px monospace;color:var(--lime);background:#292e3e;width:96px;height:94px;display:grid;place-content:center;margin:22px 0}.profile h2{font-size:25px;letter-spacing:-.6px;margin-bottom:8px}.profile p{color:var(--muted)}.profile-row{border-top:1px solid var(--line);padding:12px 0}.profile-row span{display:block;font:10px monospace;color:var(--muted)}.profile-row strong{font-size:12px;font-weight:500}.profile>a{font-size:12px;color:var(--lime)}.arcade{padding-bottom:30px}.section-top{display:flex;justify-content:space-between;align-items:end;margin-bottom:22px}.section-top .eyebrow{margin-bottom:8px}.section-top h2{font-size:26px;margin:0;letter-spacing:-.5px}.pixel-label{font:9px monospace;color:var(--lime);padding:6px 8px;border:1px solid #53613d;margin-left:14px;vertical-align:middle}.hud{display:flex;align-items:center;gap:18px;font:12px monospace}.hud #xp{color:var(--lime)}.hud button{font-size:10px}.world-tabs{display:flex;gap:6px;margin-bottom:10px;flex-wrap:wrap}.world-tabs button{font:11px monospace;border-radius:3px;color:var(--muted);padding:9px 12px}.world-tabs button.active{color:var(--lime);border-color:var(--lime);background:#d4f8790b}.game-stage{position:relative;border:1px solid #49526c;border-radius:10px;overflow:hidden;background:#202c4c}canvas{width:100%;display:block;image-rendering:pixelated}.game-overlay{position:absolute;left:24px;top:20px;pointer-events:none;right:20px}.game-overlay span{display:block;font:10px monospace;letter-spacing:2px;color:#dae3ff}.game-overlay strong{display:block;font-size:13px;font-weight:500;margin-top:8px;max-width:460px}.game-bottom{display:flex;gap:12px;align-items:center;justify-content:space-between;margin-top:12px;font:10px monospace;color:var(--muted)}.game-bottom>span{max-width:490px}.game-bottom button{font:10px monospace}.touch{display:flex;gap:4px}.game-caption{font:10px/1.6 monospace;color:var(--muted);margin-top:12px}#achievements{display:flex;flex-wrap:wrap;gap:8px}#achievements span{font:10px monospace;padding:5px 9px;border:1px solid #576449;color:var(--lime)}.section{padding-top:90px;padding-bottom:90px;border-top:1px solid var(--line)}.section-heading{display:grid;grid-template-columns:1.4fr 1fr;gap:80px;align-items:end;margin-bottom:34px}.section-heading h2{margin:0}.section-heading>p{color:var(--muted);font-size:15px;max-width:390px}.mission-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.mission{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:24px}.mission-no{display:flex;justify-content:space-between;font:10px monospace;color:var(--muted)}.mission-no span{color:var(--lime);font-size:20px}.diagram{font:11px monospace;display:flex;justify-content:space-between;align-items:center;height:105px;color:#c5cbdc}.diagram b{color:var(--purple);font-size:20px}.tag{font-size:9px;letter-spacing:1px;color:var(--purple)}.mission h3{margin-top:14px}.mission p{font-size:14px;color:var(--muted)}details{border-top:1px solid var(--line);padding-top:16px}summary{font-size:13px;cursor:pointer;color:var(--lime)}details p{margin-top:14px}details b{color:var(--ink)}.capabilities{background:#171b25}.skill-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:30px;margin-top:42px}.skill-grid article{border-top:1px solid #525746;padding-top:18px}.skill-grid article>span{font:12px monospace;color:var(--lime)}.skill-grid h3{font-size:20px;margin-top:20px}.skill-grid p{font-size:14px;color:var(--muted)}.skill-grid small{font:11px/1.9 monospace;color:#c1c6d4}.footnote{font-size:11px;color:var(--muted);margin-top:28px}.career-row{display:grid;grid-template-columns:210px 1fr;gap:35px;padding:27px 0;border-top:1px solid var(--line)}.career-date{font:11px monospace;color:var(--muted);padding-top:6px}.career-row h3{font-size:21px;margin-bottom:5px}.career-company{color:var(--purple);font-size:13px}.career-row p{max-width:740px;font-size:14px;color:var(--muted);margin-top:12px}.career-row details{margin-top:10px;border:0;padding:0}.project-history{margin-top:25px;padding:24px;background:var(--panel);border:1px solid var(--line);border-radius:8px}.project-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:25px;padding-top:25px}.project-grid p{font-size:13px;color:var(--muted)}.project-grid h3{margin-bottom:10px}.ai{background:#1c1b2a}.ai-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px}.ai p{color:#bbb9ce;font-size:15px}.chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:25px}.chips span{font:10px monospace;border:1px solid #484156;padding:7px 10px;border-radius:4px}.lab{background:#12141e;border:1px solid #474257;border-radius:10px;padding:24px;align-self:start}.lab-top{display:flex;justify-content:space-between;font:11px monospace;margin-bottom:20px}.lab .tiny{font:9px monospace;color:var(--muted)}.steps{display:flex;gap:5px;flex-wrap:wrap;margin:20px 0}.steps button{font:10px monospace;padding:7px}.steps button.active{background:var(--purple);color:#171622}.lab pre{white-space:pre-wrap;font:12px/1.9 monospace;color:#d8d4ed;background:#1b1d2b;padding:18px;border-radius:4px;min-height:160px}.lab h3{font-size:18px}.lab-bottom{font:10px monospace;color:var(--lime);padding-top:16px;border-top:1px solid var(--line)}.credentials{display:grid;grid-template-columns:1fr 1fr;gap:70px}.credentials h3{font-size:14px;color:var(--purple);margin-top:25px}.credentials h3:first-child{margin-top:0}.credentials p{font-size:14px;color:var(--muted)}.contact{padding-bottom:100px}.contact h2{font-size:clamp(36px,4.5vw,60px)}.contact p{color:var(--muted);max-width:620px}footer{display:flex;justify-content:space-between;padding-top:24px!important;padding-bottom:24px!important;font:10px monospace;color:var(--muted);border-top:1px solid var(--line)}dialog{background:#1b2030;color:var(--ink);border:1px solid #637150;border-radius:12px;max-width:580px;width:calc(100% - 32px);padding:32px}dialog::backdrop{background:#080b12c9;backdrop-filter:blur(6px)}dialog h2{font-size:30px}dialog .close{float:right;font-size:22px;border:0;padding:0 7px}#answers{display:grid;gap:10px}#answers button{text-align:left;font-size:14px}#answer-feedback{min-height:48px;color:var(--lime);font-size:13px;margin-top:20px}.toast{position:fixed;bottom:25px;left:50%;transform:translate(-50%,130px);transition:transform .3s;background:var(--lime);color:#18201a;padding:12px 24px;border-radius:8px;font-size:13px;z-index:20}.toast.show{transform:translate(-50%,0)}.skip{position:absolute;left:12px;top:-60px;background:var(--lime);color:black;padding:10px;z-index:30}.skip:focus{top:10px}.recruiter .arcade{display:none}.recruiter .profile{transform:none}.recruiter .hero-notes{display:none}@media(max-width:900px){header nav{display:none}.slash{display:none}.hero-grid{gap:30px;grid-template-columns:1.5fr 1fr}h1{font-size:48px}.mission-grid{grid-template-columns:1fr}.mission h3 br{display:none}.diagram{height:65px;max-width:260px}.skill-grid{grid-template-columns:1fr 1fr}.ai-grid{gap:30px}.section-heading{gap:30px}.section-top{align-items:start}.pixel-label{display:none}.hud{gap:10px}.project-grid{grid-template-columns:1fr}}@media(max-width:620px){.wrap{padding-left:22px;padding-right:22px}header{padding:16px 22px}.logo{font-size:10px;gap:8px}#mode{padding:8px;font-size:10px}.hero{padding-top:40px}.hero-grid,.ai-grid,.credentials,.section-heading{grid-template-columns:1fr}.hero-grid{gap:40px}.profile{max-width:350px;transform:none}.hero h1{font-size:44px;letter-spacing:-2px}.eyebrow{font-size:9px}.intro{font-size:18px}.section{padding-top:55px;padding-bottom:55px}.section-heading{gap:20px}.section-heading>p{margin-bottom:0}.section-top{display:block}.hud{margin-top:15px}.world-tabs button{font-size:9px;padding:8px}.game-stage canvas{height:230px;object-fit:cover}.game-overlay{left:15px;top:12px}.game-overlay strong{font-size:11px;max-width:250px}.game-bottom{flex-wrap:wrap}.game-bottom>span{width:100%;font-size:9px}.skill-grid{gap:22px}.skill-grid h3{font-size:17px}.career-row{grid-template-columns:1fr;gap:10px}.credentials{gap:20px}.hero-notes{font-size:9px;gap:15px}footer{gap:15px;flex-wrap:wrap}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}@media print{body{background:white;color:#111;font-size:11px}header,.arcade,.actions,.profile,.steps,.toast,dialog,footer{display:none!important}.wrap{max-width:none;padding:0}.section,.hero{padding:20px 0;border-color:#ccc}.hero-grid,.section-heading,.ai-grid,.credentials{display:block}h1{font-size:32px}h2{font-size:25px}h3{font-size:16px}em,.career-company,.tag,summary{color:#333}.capabilities,.ai,.mission,.lab,.project-history{background:white}.mission-grid,.skill-grid{display:block}.mission{margin-bottom:12px}.diagram,.hero-notes{display:none}p,.intro,.sub,.mission p,.career-row p,.ai p,.credentials p{color:#333!important}.career-row{grid-template-columns:170px 1fr;break-inside:avoid}.lab pre{color:#111;background:#eee}.eyebrow{color:#444}.contact h2{font-size:28px}}
-</style></head><body>
-<a class="skip" href="#main">Skip to content</a><header><a class="logo" href="#"><span class="mark">GC</span> GIUSEPPE CATANESE<span class="slash"> / QA ARCHITECT &amp; LEAD</span></a><nav aria-label="Main navigation"><a href="#missions">Missions</a><a href="#career">Career</a><a href="#ai">AI lab</a><a href="#contact">Contact ↗</a></nav><button id="mode" aria-pressed="false">Recruiter mode</button></header>
-<main id="main"><section class="hero wrap"><div class="eyebrow"><span class="live"></span> QUALITY STRATEGY &amp; LEADERSHIP · SWITZERLAND / ITALY</div><div class="hero-grid"><div><h1>Architecting quality.<br><em>Leading with purpose.</em></h1><p class="intro">I'm Giuseppe. I connect quality strategy, test architecture and team leadership to help teams make confident release decisions.</p><p class="sub">QA Architect &amp; Lead · Quality Strategy · Automation &amp; Integration · AI-Assisted QA</p><div class="actions"><a class="button primary" href="#missions">Explore my work <span>↘</span></a><a class="button" href="https://www.linkedin.com/in/giuseppe-c-7791891a/" target="_blank" rel="noopener">LinkedIn ↗</a></div><div class="hero-notes"><span>01 / Engineer's mindset</span><span>02 / Leadership mindset</span></div></div><aside class="profile"><span class="tiny">PLAYER PROFILE / GC_01</span><div class="avatar" aria-hidden="true">⌐■_■</div><h2>Giuseppe Catanese</h2><p>From engineering depth<br>to quality leadership.</p><div class="profile-row"><span>SPECIALITY</span><strong>Quality strategy &amp; test architecture</strong></div><div class="profile-row"><span>TOOLKIT</span><strong>Leadership · Automation · Integration</strong></div><a href="mailto:catanese.giuseppe@gmail.com">Let's talk engineering ↗</a></aside></div></section>
-<section class="arcade wrap" aria-labelledby="game-title"><div class="section-top"><div><span class="eyebrow">SIDE QUEST / OPTIONAL, BUT FUN</span><h2 id="game-title">QA Bug Hunter<span class="pixel-label">PLAYABLE PORTFOLIO</span></h2></div><div class="hud"><span id="score">0 / 5 bugs</span><span id="xp">0 XP</span><button id="sound" aria-pressed="false">Sound off</button></div></div><div class="world-tabs" role="group" aria-label="Choose a world"></div><div class="game-stage"><canvas id="game" width="1100" height="310" aria-label="QA Bug Hunter platform game"></canvas><div class="game-overlay"><span id="world-label">WORLD 01 / SIGNAL VALLEY</span><strong id="game-message">Every great investigation starts with a little curiosity.</strong></div></div><div class="game-bottom"><span>Move ← → or A / D · Jump ↑ / Space · Reach the bug to open a mission</span><div class="touch"><button data-control="left" aria-label="Move left">←</button><button data-control="jump" aria-label="Jump">↑</button><button data-control="right" aria-label="Move right">→</button></div><button id="challenge">Open current mission ↗</button><button id="reset">Reset</button></div><p class="game-caption">Visitor XP is game progress. Career experience and credentials are independent of the game.</p><div id="achievements" aria-live="polite"></div></section>
-<section class="wrap section" id="missions"><div class="section-heading"><div><span class="eyebrow">01 / SELECTED MISSIONS</span><h2>Complex systems.<br><em>Clear thinking.</em></h2></div><p>A few examples of the work behind the toolkit. Explore the challenge, my contribution and how I validate the result.</p></div><div class="mission-grid"><article class="mission"><span class="mission-no">MISSION 01 <span>↗</span></span><div class="diagram">API <b>→</b> EVENT <b>→</b> EVIDENCE</div><span class="tag">BANKING & PAYMENTS</span><h3>Following a transaction<br>across the boundaries.</h3><p>Integration quality for Viseca's ADOPT platform through Fincons Group.</p><details><summary>Inside the investigation</summary><p><b>Challenge:</b> Validate behaviour across API Gateway, middleware, events and downstream services.</p><p><b>My contribution:</b> Design API and end-to-end scenarios, inject RabbitMQ events, check mappings and correlate Splunk traces.</p><p><b>Validation:</b> Compare contracts, responses and downstream evidence; document reproducible executions and defects in Jira.</p></details></article><article class="mission"><span class="mission-no">MISSION 02 <span>↗</span></span><div class="diagram">BUILD <b>→</b> TEST <b>→</b> RELEASE</div><span class="tag">AUTOMATION & DELIVERY</span><h3>Making regression<br>a repeatable practice.</h3><p>Reusable automation, structured data and evidence that supports release decisions.</p><details><summary>Inside the approach</summary><p><b>Challenge:</b> Keep regression meaningful as applications and integrations evolve.</p><p><b>My contribution:</b> Develop and maintain Tosca automation and apply experience with code-based frameworks and CI pipelines.</p><p><b>Validation:</b> Assess assertions, test data and execution evidence; investigate failures before classifying them as product defects.</p></details></article><article class="mission"><span class="mission-no">MISSION 03 <span>↗</span></span><div class="diagram">RISK <b>→</b> COVERAGE <b>→</b> DECISION</div><span class="tag">QA LEADERSHIP</span><h3>Bringing the team<br>to a release decision.</h3><p>Test planning, prioritisation and clear communication across engineering and product.</p><details><summary>Inside the coordination</summary><p><b>Challenge:</b> Align delivery priorities, regression coverage, team capacity and unresolved defects.</p><p><b>My contribution:</b> Coordinate test priorities, align QA colleagues and stakeholders, and communicate release readiness, drawing on QA leadership and eCommerce release management.</p><p><b>Validation:</b> Review completed coverage, blocking issues and remaining risks with the people responsible for the release.</p></details></article></div></section>
-<section class="capabilities section"><div class="wrap"><span class="eyebrow">02 / THE TOOLKIT</span><h2>Depth across the stack.<br><em>Perspective across the team.</em></h2><div class="skill-grid"><article><span>01</span><h3>Automation engineering</h3><p>Reusable tests, maintainable suites and purposeful regression.</p><small>Tosca · Selenium · Playwright · Cypress · Appium · BDD</small></article><article><span>02</span><h3>Integration investigation</h3><p>Contracts, payloads and traces across distributed services.</p><small>REST · Swagger · RabbitMQ · Splunk · SQL · API Gateway</small></article><article><span>03</span><h3>Quality strategy &amp; leadership</h3><p>Risk-based test strategy, team priorities, stakeholder alignment and evidence-led release governance.</p><small>Jira · Azure DevOps · Jenkins · JMeter · K6 · Datadog</small></article><article><span>04</span><h3>Telecom foundations</h3><p>Protocol analysis and interoperability shaped my engineering approach.</p><small>LTE / UMTS · Wireshark · QXDM · CMW500 · RF testing</small></article></div><p class="footnote">Also: validation of legacy-to-Kubernetes migrations, including routing, configuration and functional continuity.</p></div></section>
-<section id="career" class="wrap section"><div class="section-heading"><div><span class="eyebrow">03 / CAREER JOURNEY</span><h2>A career built<br>on <em>curiosity.</em></h2></div><p>Telecom engineering gave me a foundation in systems. Automation, integration and QA leadership expanded the picture. My next step is broader ownership of quality strategy, team development and delivery governance.</p></div><div id="career-list"></div><details class="project-history"><summary>Additional project experience · Cloud Academy, Esselunga & Questel</summary><div class="project-grid"><article><h3>Cloud Academy</h3><span class="tag">QA LEADERSHIP</span><p>QA Lead experience spanning quality practices and engineering collaboration.</p></article><article><h3>Esselunga eCommerce</h3><span class="tag">RELEASE & TEST MANAGEMENT · 2025–2026</span><p>Release and test coordination across online shopping, Parafarmacia, Enoteca and apps. Automation and delivery tooling includes Cypress, Playwright, Jenkins and Azure DevOps.</p></article><article><h3>Questel</h3><span class="tag">PAYMENT PLATFORMS</span><p>API, database and event-driven validation across payment preparation and execution, with SQL Server, Swagger, RabbitMQ and Playwright.</p></article></div><p class="footnote">Project highlights are shown separately from the employment timeline; employer relationships and dates are not inferred.</p></details></section>
-<section id="ai" class="ai section"><div class="wrap ai-grid"><div><span class="eyebrow">04 / AI LABORATORY</span><h2>Better questions.<br><em>Stronger investigations.</em></h2><p>I use AI as a thinking partner in quality engineering: to explore edge cases, refine investigation hypotheses and turn complex technical context into clear, reviewable work.</p><p>My approach combines precise prompts, explicit constraints and iteration with engineering judgement and verification against real evidence.</p><div class="chips"><span>Test design</span><span>Log investigation</span><span>Payload review</span><span>Technical writing</span></div></div><div class="lab"><div class="lab-top"><span>WORKFLOW EXPLORER</span><span class="live"></span></div><p class="tiny">ILLUSTRATIVE EXAMPLE · SYNTHETIC DATA</p><div class="steps" role="group" aria-label="AI workflow steps"></div><div id="lab-content" aria-live="polite"></div><div class="lab-bottom">AI proposes. I review, execute and verify.</div></div></div></section>
-<section class="wrap section credentials"><div><span class="eyebrow">05 / FOUNDATIONS</span><h2>Learning never<br><em>reaches game over.</em></h2></div><div><h3>Certification</h3><p>ISTQB® Foundation Level<br>Scrum Fundamentals Certified (SFC)</p><h3>Training & professional development</h3><p>Scaling Tests with Docker · Remote BDD Testing Technique · LTE for Interoperability Testers</p><h3>Education</h3><p>Telecommunications & Electronics<br>Università degli Studi Roma Tre · 2007–2010</p><p>Scientific secondary-school education<br>Liceo Scientifico Aristotele · 1999–2004</p><h3>Languages</h3><p>Italian · English · Lithuanian</p></div></section>
-<section id="contact" class="wrap contact section"><span class="eyebrow">NEXT MISSION / LET'S CONNECT</span><h2>Ready to build<br><em>a stronger quality practice?</em></h2><p>My next chapter: Head of QA or QA Director. I’m looking to bring hands-on engineering depth to quality strategy, team development and release governance.</p><div class="actions"><a class="button primary" href="mailto:catanese.giuseppe@gmail.com">Start a conversation ↗</a><a class="button" target="_blank" rel="noopener" href="https://www.linkedin.com/in/giuseppe-c-7791891a/">View LinkedIn ↗</a><button class="button" id="print">Save profile as PDF ↓</button></div></section></main><footer class="wrap"><span>© 2026 Giuseppe Catanese</span><span>Built with curiosity. Tested with intent.</span><a href="#">Back to top ↑</a></footer>
-<dialog id="mission-dialog"><button class="close" aria-label="Close mission">×</button><span class="eyebrow">BUG HUNTER / ENGINEERING CHALLENGE</span><h2 id="question-title"></h2><p id="question"></p><div id="answers"></div><p id="answer-feedback" aria-live="polite"></p><button class="button" id="dialog-done">Back to the adventure</button></dialog><div class="toast" id="toast" role="status"></div><script>'use strict';
-const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
-const worlds=[
-{name:'Signal Valley',color:'#99d4bd',badge:'Signal Detective',title:'A signal without a connection',q:'A device sees the network but cannot complete a connection. What is the strongest first investigation step?',answers:['Increase transmit power immediately','Correlate protocol traces with the failed connection sequence','Assume the user interface is incorrect'],correct:1,why:'Start with evidence across the connection sequence. A visible signal alone does not prove successful protocol negotiation.'},
-{name:'Automation Factory',color:'#d4f879',badge:'Regression Guardian',title:'The flaky regression',q:'An automated test passes locally and fails intermittently in the pipeline. What do you investigate first?',answers:['Timing, shared test data and environment evidence','Disable the test permanently','Add a long sleep to every step'],correct:0,why:'Investigate synchronisation, data isolation and execution conditions before changing the test or reporting a product defect.'},
-{name:'Integration City',color:'#ac9aff',badge:'Root Cause Found',title:'The misleading status code',q:'An API returns an error and a downstream warning appears nearby in the logs. How do you establish whether they are related?',answers:['Treat nearby timestamps as proof','Report both messages as one defect','Follow correlation identifiers and reconstruct the request flow'],correct:2,why:'Correlation and chronological evidence establish the relationship. A nearby warning can belong to a different transaction.'},
-{name:'Release Control',color:'#ffbb86',badge:'Release Navigator',title:'The release decision',q:'Most regression tests passed, but an important payment path remains untested. What is the most useful release input?',answers:['Only the overall pass percentage','Explicit business risk, missing coverage and mitigation options','A release approval because most tests passed'],correct:1,why:'Readiness depends on the importance of uncovered behaviour and remaining risk, not just an aggregate pass rate.'},
-{name:'AI Laboratory',color:'#8fd8e8',badge:'Evidence First',title:'A convincing AI answer',q:'AI proposes a plausible root cause for an integration failure. What comes next?',answers:['Verify the hypothesis against traces, contracts and reproduction','Publish the explanation as confirmed','Ask AI to sound more confident'],correct:0,why:'Treat the output as a hypothesis. Engineering evidence and reproducible behaviour determine whether it is correct.'}
-];
-let saved={};try{saved=JSON.parse(localStorage.getItem('gc-qa-progress')||'{}')}catch{}
-let completed=new Set((saved.completed||[]).filter(n=>Number.isInteger(n)&&n>=0&&n<5)),world=0,recruiter=saved.mode===true,sound=false;
-function persist(){try{localStorage.setItem('gc-qa-progress',JSON.stringify({completed:[...completed],mode:recruiter}))}catch{}}
-function progress(){ $('#score').textContent=`${completed.size} / 5 bugs`;$('#xp').textContent=`${completed.size*200} XP`;$('#achievements').replaceChildren(...[...completed].map(i=>{let e=document.createElement('span');e.textContent='✦ '+worlds[i].badge;return e}));$$('.world-tabs button').forEach((b,i)=>{b.textContent=`0${i+1} ${worlds[i].name}${completed.has(i)?' ✓':''}`});persist() }
-function setMode(){document.body.classList.toggle('recruiter',recruiter);$('#mode').textContent=recruiter?'Arcade mode':'Recruiter mode';$('#mode').setAttribute('aria-pressed',String(recruiter));persist()}
-$('#mode').onclick=()=>{recruiter=!recruiter;setMode()};setMode();
-function toast(t){$('#toast').textContent=t;$('#toast').classList.add('show');setTimeout(()=>$('#toast').classList.remove('show'),3200)}
-$('#sound').onclick=()=>{sound=!sound;$('#sound').textContent=sound?'Sound on':'Sound off';$('#sound').setAttribute('aria-pressed',String(sound))};
-function beep(){if(!sound)return;try{const ctx=new (window.AudioContext||window.webkitAudioContext)(),osc=ctx.createOscillator(),g=ctx.createGain();osc.type='square';osc.frequency.setValueAtTime(440,ctx.currentTime);osc.frequency.setValueAtTime(660,ctx.currentTime+.08);g.gain.value=.035;osc.connect(g);g.connect(ctx.destination);osc.start();osc.stop(ctx.currentTime+.18);osc.onended=()=>ctx.close()}catch{}}
-worlds.forEach((w,i)=>{let b=document.createElement('button');b.onclick=()=>selectWorld(i);$('.world-tabs').append(b)});
-const canvas=$('#game'),ctx=canvas.getContext('2d'),keys={},player={x:75,y:248,vy:0},ground=276;let last=0,t=0,opened=false;
-function selectWorld(i){world=i;player.x=75;player.y=248;player.vy=0;opened=false;$$('.world-tabs button').forEach((b,n)=>{b.classList.toggle('active',n===i);b.setAttribute('aria-pressed',String(n===i))});$('#world-label').textContent=`WORLD 0${i+1} / ${worlds[i].name.toUpperCase()}`;$('#game-message').textContent=completed.has(i)?'Mission cleared. Explore another world or replay the challenge.':'Explore the world. Meet the bug. Follow the evidence.';draw()}
-function rect(x,y,w,h,c){ctx.fillStyle=c;ctx.fillRect(Math.round(x),Math.round(y),w,h)}
-function draw(){const w=worlds[world],reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;ctx.clearRect(0,0,1100,310);rect(0,0,1100,310,'#202b46');rect(0,155,1100,155,'#273650');for(let n=0;n<40;n++){const x=(n*137+23)%1100,y=(n*59)%130;rect(x,y,2,2,'#a0accb')}
-for(let n=0;n<8;n++){let x=n*165;rect(x,180-(n%3)*30,75,110,'#34445f');rect(x+10,193-(n%3)*30,5,8,'#6d7c95');rect(x+34,193-(n%3)*30,5,8,'#6d7c95')}
-rect(0,ground,1100,34,'#111b2a');rect(0,ground,1100,5,w.color);for(let n=0;n<35;n++){rect(n*34,290,30,2,'#394352');rect(n*34,305,30,2,'#394352')}
-[[235,216,120],[460,181,110],[670,216,115]].forEach(([x,y,width])=>{rect(x,y,width,10,w.color);rect(x,y+10,width,13,'#48536a');for(let k=0;k<width;k+=25)rect(x+k,y+11,2,11,'#1e2a40')});
-for(let n=0;n<5;n++){let x=280+n*140,y=145+(n%2)*30+(reduced?0:Math.sin(t*2+n)*4);rect(x,y,11,15,completed.has(world)?'#7d8a83':'#ffdb83');rect(x+3,y+3,3,9,'#fff1b8')}
-// Original pixel investigator, with a teal cap and a little handheld scanner.
-let px=player.x,py=player.y,walk=!reduced&&(keys.left||keys.right)?Math.sin(t*15)*3:0;rect(px+4,py,20,5,w.color);rect(px,py+5,28,5,w.color);rect(px+5,py+10,18,10,'#f0c6a4');rect(px+17,py+11,3,4,'#182239');rect(px+3,py+20,22,14,'#e4e9ee');rect(px+1,py+22,5,12,w.color);rect(px+23,py+23,8,9,'#8ca7b6');rect(px+25,py+24,4,4,w.color);rect(px+5,py+34,7,9+walk,'#ad9fe7');rect(px+17,py+34,7,9-walk,'#ad9fe7');
-let bx=945,by=249+(reduced?0:Math.sin(t*3)*4);rect(bx,by,27,18,completed.has(world)?'#7e9189':'#f28b98');rect(bx+5,by-5,4,6,'#f28b98');rect(bx+18,by-5,4,6,'#f28b98');rect(bx+5,by+5,5,4,'#202b46');rect(bx+18,by+5,5,4,'#202b46');for(let k=0;k<3;k++){rect(bx-5,by+k*7,5,3,w.color);rect(bx+27,by+k*7,5,3,w.color)}
-rect(1035,133,4,143,'#bbc5d6');rect(1039,135,40,24,w.color);ctx.font='11px monospace';ctx.fillStyle='#e2e8f4';ctx.fillText(completed.has(world)?'CLEARED':'BUG DETECTED',902,224);ctx.fillStyle=w.color;ctx.fillText('GC_01',px-2,py-12)}
-function frame(now){let dt=Math.min((now-last)/1000||0,.035);last=now;t+=dt;if(!recruiter&&!$('#mission-dialog').open){let prevY=player.y;if(keys.left)player.x-=240*dt;if(keys.right)player.x+=240*dt;player.x=Math.max(5,Math.min(1060,player.x));player.vy+=950*dt;player.y+=player.vy*dt;let floor=ground;for(let [x,y,width] of [[235,216,120],[460,181,110],[670,216,115]])if(player.x+26>x&&player.x<x+width&&prevY+43<=y+3&&player.y+43>=y&&player.vy>=0)floor=Math.min(floor,y);if(player.y+43>=floor){player.y=floor-43;player.vy=0}if(player.x>900&&!opened){opened=true;openChallenge()}}draw();requestAnimationFrame(frame)}
-function jump(){if(player.vy===0){player.vy=-450;beep()}}
-window.addEventListener('keydown',e=>{if(recruiter||$('#mission-dialog').open||/INPUT|TEXTAREA|BUTTON|SUMMARY/.test(e.target.tagName))return;if(!['ArrowLeft','ArrowRight','ArrowUp',' ','a','d','w'].includes(e.key))return;const r=canvas.getBoundingClientRect();if(r.bottom<0||r.top>innerHeight)return;e.preventDefault();if(e.key==='ArrowLeft'||e.key==='a')keys.left=true;if(e.key==='ArrowRight'||e.key==='d')keys.right=true;if(['ArrowUp',' ','w'].includes(e.key)&&!e.repeat)jump()});window.addEventListener('keyup',e=>{if(['ArrowLeft','a'].includes(e.key))keys.left=false;if(['ArrowRight','d'].includes(e.key))keys.right=false});window.addEventListener('blur',()=>{keys.left=keys.right=false});
-$$('[data-control]').forEach(b=>{b.onpointerdown=e=>{e.preventDefault();b.setPointerCapture(e.pointerId);let k=b.dataset.control;if(k==='jump')jump();else keys[k]=true};b.onpointerup=b.onpointercancel=()=>{keys.left=keys.right=false}});
-function openChallenge(){keys.left=keys.right=false;const w=worlds[world];$('#question-title').textContent=w.title;$('#question').textContent=w.q;$('#answer-feedback').textContent='';$('#answers').replaceChildren();w.answers.forEach((a,i)=>{let b=document.createElement('button');b.textContent=a;b.onclick=()=>{if(i!==w.correct){$('#answer-feedback').textContent='Try again: '+(world===2?'proximity alone does not establish causality.':'start with the evidence and the engineering risk.');return}const fresh=!completed.has(world);completed.add(world);progress();beep();$('#answer-feedback').textContent=w.why;$$('#answers button').forEach(x=>x.disabled=true);b.style.borderColor='var(--lime)';if(fresh)toast(`Achievement unlocked: ${w.badge} · +200 XP`);$('#game-message').textContent='Mission cleared. Good engineering starts with good evidence.'};$('#answers').append(b)});$('#mission-dialog').showModal()}
-$('#challenge').onclick=openChallenge;$('.close').onclick=$('#dialog-done').onclick=()=>$('#mission-dialog').close();$('#mission-dialog').addEventListener('click',e=>{if(e.target===$('#mission-dialog')){let r=e.target.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)e.target.close()}});$('#reset').onclick=()=>{completed.clear();progress();selectWorld(0);toast('Adventure reset. Ready for a fresh investigation.')};progress();selectWorld(0);requestAnimationFrame(frame);
-const steps=[{name:'Requirement',title:'Start with expected behaviour',text:'A synthetic payment API requires a participant identifier.\n\nMissing or empty identifier → reject the request.\nRejected requests must not be forwarded.',note:'Define the rule before asking for test ideas.'},{name:'Prompt',title:'Provide context and constraints',text:'Act as a QA review partner.\nDerive positive, negative and boundary scenarios.\nDistinguish specified behaviour from open questions.\nDo not invent status codes or acceptance criteria.\nInclude how to prove no downstream forwarding.',note:'Specific constraints make the output easier to assess.'},{name:'Candidate tests',title:'Explore proposed coverage',text:'1. Valid identifier: expected flow.\n2. Header absent: rejection.\n3. Empty value: rejection.\n4. Whitespace-only value: clarify requirement.\n5. For rejected cases: inspect downstream evidence.',note:'These are candidate scenarios, not executed results.'},{name:'Review',title:'Apply engineering judgement',text:'Confirm the contract with the requirement owner.\nRemove unsupported assumptions.\nSelect representative data and environment.\nDefine observable evidence for each assertion.',note:'I own the test design and the decision to execute.'},{name:'Evidence',title:'Verify against the system',text:'Execute the approved scenarios.\nCompare actual response to the contract.\nTrace the correlation identifier across components.\nRecord evidence and defects where appropriate.',note:'Only observed evidence supports an execution outcome.'}];
-steps.forEach((s,i)=>{let b=document.createElement('button');b.textContent=`0${i+1} ${s.name}`;b.onclick=()=>showStep(i);$('.steps').append(b)});function showStep(i){$$('.steps button').forEach((b,n)=>{b.classList.toggle('active',n===i);b.setAttribute('aria-pressed',String(n===i))});let s=steps[i];$('#lab-content').replaceChildren();let h=document.createElement('h3'),pre=document.createElement('pre'),p=document.createElement('p');h.textContent=s.title;pre.textContent=s.text;p.textContent=s.note;$('#lab-content').append(h,pre,p)}showStep(0);
-Promise.resolve({ok:true,json:async()=>[{"date": "October 2024 - Present", "title": "Senior QA / Test Engineer", "company": "Fincons Group \u00b7 Lugano, Ticino, Switzerland", "description": "Contributing to the quality and reliability of banking and payment services within the ADOPT integration platform for Viseca."}, {"date": "August 2021 - October 2024", "title": "Quality Assurance Lead / Senior QA Automation Engineer", "company": "QA North America & Intuition IT \u00b7 Mendrisio, Ticino, Switzerland", "description": "Delivered manual and automated testing initiatives for enterprise clients in Switzerland. Promoted from Senior QA Engineer to Quality Assurance Lead."}, {"date": "December 2020 - November 2022", "title": "Quality Assurance Engineer", "company": "ByteDance \u00b7 Remote", "description": "Conducted high-volume quality assurance verification on global product platforms."}, {"date": "January 2020 - July 2021", "title": "Quality Assurance Engineer", "company": "Vodafone & Havn SuperApp \u00b7 Milan, Italy / Remote", "description": "Quality verification across enterprise telecom services and consumer mobile super-applications."}, {"date": "January 2018 - January 2020", "title": "IT Quality Assurance Analyst", "company": "Eurobet Italia srl \u00b7 Rome, Italy", "description": "Performed confirmation and regression testing in Agile sprints across web, mobile, and SSBT platforms using Boundary Value Analysis, Equivalence Partitioning, and State Transitions. Developed test automation with Selenium WebDriver (Java), TestNG, and Behave (Python). Executed stress and performance tests with JMeter."}, {"date": "October 2016 - December 2017", "title": "Senior Test Engineer & SDET Consultant", "company": "ALTEN Italia \u00b7 TAS Group \u00b7 Philmark Informatica \u00b7 Rome, Italy", "description": "Delivered QA consulting and test management for enterprise and banking systems."}, {"date": "November 2015 - September 2016", "title": "MRAT / RAV Test Engineer", "company": "Cobham Wireless \u00b7 Stevenage, Hertfordshire, United Kingdom", "description": "Regression and validation testing on Aeroflex/Cobham TM500 LTE/WCDMA/GERAN cellular mobile test devices. Automated test execution and validated features against Ericsson and NSN eNodeB stations."}, {"date": "July 2013 - November 2015", "title": "IOT Specialist (Interoperability Testing)", "company": "BlackBerry \u00b7 Slough, England, United Kingdom", "description": "Handset air-interface protocol and interoperability testing across LTE, UMTS, and GPRS. Handset log investigation using Qualcomm QXDM, TEMS, and Wireshark in direct cooperation with Qualcomm chipset designers. Verified scenarios with Agilent 8960 and R&S CMW500 base station simulators."}, {"date": "April 2010 - April 2013", "title": "Support & Development Engineer", "company": "Sielte Spa \u00b7 Rome, Italy", "description": "Managed technical support and server configurations for railway systems (VoIP client consoles, Belden Hirschmann network hardware). Analyzed 3GPP LTE/UMTS protocols, built automated test plant setups using C/C++ and Perl, and performed RF planning using Mentum Planet and Anritsu Master base station analyzers."}, {"date": "June 2009 - February 2010", "title": "Field Test & WiMAX Engineer (Intern)", "company": "Linkem \u00b7 Rome, Italy", "description": "Conducted WiMAX site drive tests, analyzed RSSI link quality metrics, investigated logs with Huawei M2000, and simulated power-to-throughput relationships with MATLAB and LabVIEW."}, {"date": "January 2008 - February 2010", "title": "Researcher & Operator - Measurement Lab", "company": "Universit\u00e0 degli Studi Roma Tre \u00b7 Rome, Italy", "description": "Built automated power-quality measurement setups using Rogowski probes, Visual Basic, and spectrum analyzers. Automated modem AT-command testing routines via Perl scripts."}]}).then(r=>{if(!r.ok)throw Error();return r.json()}).then(rows=>{rows.forEach((r,i)=>{let article=document.createElement('article');article.className='career-row';let date=document.createElement('div');date.className='career-date';date.textContent=r.date;let content=document.createElement('div'),h=document.createElement('h3'),company=document.createElement('div'),p=document.createElement('p');h.textContent=r.title;company.className='career-company';company.textContent=r.company;p.textContent=r.description;content.append(h,company);if(i===0){p.textContent='At Fincons Group, supporting Viseca’s ADOPT integration platform across card issuing, digital wallets, peer-to-peer payments and compliance workflows.';content.append(p);let d=document.createElement('details'),s=document.createElement('summary'),body=document.createElement('p');s.textContent='Responsibilities & toolkit';body.textContent='Design functional, regression and end-to-end scenarios; develop Tosca automation; validate API contracts and payload mappings; inject and verify RabbitMQ events; investigate Splunk traces; validate Kubernetes migrations; document test plans and evidence in Jira. Collaborate with product owners, developers, QA colleagues and external providers.';d.append(s,body);content.append(d)}else if(i<3)content.append(p);else{let d=document.createElement('details'),s=document.createElement('summary');s.textContent='Explore this chapter';d.append(s,p);content.append(d)}article.append(date,content);$('#career-list').append(article)})}).catch(()=>{$('#career-list').textContent='The career timeline could not load. Please reload or view my LinkedIn profile.'});
-let beforePrint=[];window.addEventListener('beforeprint',()=>{beforePrint=$$('details').filter(d=>!d.open);beforePrint.forEach(d=>d.open=true)});window.addEventListener('afterprint',()=>beforePrint.forEach(d=>d.open=false));$('#print').onclick=()=>window.print();
-</script></body></html>
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Giuseppe Catanese — Lead QA & Test Automation Architect</title>
+  <meta name="description" content="Personal portfolio and technical profile of Giuseppe Catanese, Lead QA & Test Automation Architect. Specializing in enterprise banking integration (Viseca ADOPT), microservices, API contract testing, and cloud migrations.">
+  
+  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+          },
+          colors: {
+            void: '#070a11',
+            surface: {
+              DEFAULT: '#0d1322',
+              card: '#11192e',
+              cardHover: '#16223d',
+              border: '#1f2c47',
+              borderSubtle: '#18243b'
+            },
+            accent: {
+              cyan: '#06b6d4',
+              sky: '#38bdf8',
+              emerald: '#10b981',
+              amber: '#f59e0b',
+              violet: '#8b5cf6'
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Custom glow and technical card styles inspired by high-end dev portfolios */
+    .bento-card {
+      background: radial-gradient(120% 120% at 50% 0%, #152038 0%, #0d1527 100%);
+      border: 1px solid #1f2c47;
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .bento-card:hover {
+      border-color: #38bdf8;
+      box-shadow: 0 10px 30px -10px rgba(56, 189, 248, 0.15);
+      transform: translateY(-2px);
+    }
+    .glass-nav {
+      background: rgba(7, 10, 17, 0.82);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+    }
+    .glow-cyan {
+      box-shadow: 0 0 40px -10px rgba(6, 182, 212, 0.25);
+    }
+    /* Custom clean scrollbar */
+    ::-webkit-scrollbar {
+      width: 7px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #070a11;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #1e293b;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #38bdf8;
+    }
+  </style>
+</head>
+<body class="bg-void text-slate-200 antialiased selection:bg-accent-cyan selection:text-void min-h-screen flex flex-col">
+
+  <!-- Floating Sticky Navigation -->
+  <header class="fixed top-0 inset-x-0 z-50 glass-nav border-b border-surface-borderSubtle">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+      
+      <!-- Brand & Status Pill -->
+      <a href="#hero" class="flex items-center gap-3 group">
+        <div class="w-8 h-8 rounded-lg bg-surface-card border border-surface-border flex items-center justify-center font-mono font-bold text-accent-cyan group-hover:border-accent-sky transition">
+          GC
+        </div>
+        <div class="hidden sm:flex flex-col">
+          <span class="font-bold text-sm text-white tracking-tight group-hover:text-accent-sky transition">Giuseppe Catanese</span>
+          <span class="font-mono text-[10px] text-slate-400">Lead QA Architect</span>
+        </div>
+      </a>
+
+      <!-- Quick Section Jump Links -->
+      <nav class="hidden md:flex items-center gap-6 text-xs font-mono text-slate-400">
+        <a href="#overview" class="hover:text-accent-sky transition flex items-center gap-1.5"><span class="text-accent-cyan">01.</span>Overview</a>
+        <a href="#architecture" class="hover:text-accent-sky transition flex items-center gap-1.5"><span class="text-accent-cyan">02.</span>Architecture</a>
+        <a href="#arsenal" class="hover:text-accent-sky transition flex items-center gap-1.5"><span class="text-accent-cyan">03.</span>Arsenal</a>
+        <a href="#experience" class="hover:text-accent-sky transition flex items-center gap-1.5"><span class="text-accent-cyan">04.</span>Experience</a>
+        <a href="#badges" class="hover:text-accent-sky transition flex items-center gap-1.5"><span class="text-accent-cyan">05.</span>Badges</a>
+      </nav>
+
+      <!-- Action Buttons & Availability -->
+      <div class="flex items-center gap-3">
+        <div class="hidden sm:inline-flex items-center gap-2 px-2.5 py-1 rounded-full bg-surface-card border border-surface-border text-[11px] font-mono text-slate-300">
+          <span class="w-2 h-2 rounded-full bg-accent-emerald animate-pulse"></span>
+          <span>Lugano (CH) / Remote</span>
+        </div>
+        <a href="mailto:catanese.giuseppe@gmail.com" class="px-3.5 py-1.5 rounded-lg bg-accent-sky text-void font-semibold text-xs hover:bg-sky-300 transition flex items-center gap-1.5 font-mono shadow-sm shadow-accent-sky/20">
+          <i class="fa-solid fa-paper-plane text-[10px]"></i>
+          <span>Contact</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex-grow pt-24 pb-16 px-4 sm:px-6 max-w-6xl mx-auto w-full space-y-16">
+
+    <!-- Hero Section with Minimalist Editorial Typography -->
+    <section id="hero" class="pt-6 sm:pt-12">
+      <div class="space-y-4 max-w-4xl">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-accent-cyan/10 border border-accent-cyan/20 text-accent-cyan font-mono text-xs font-medium">
+          <i class="fa-solid fa-terminal text-[10px]"></i>
+          <span>QUALITY ARCHITECTURE &bull; ENTERPRISE INTEGRATION &bull; ZERO-REGRESSION</span>
+        </div>
+        <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold text-white tracking-tight leading-[1.08]">
+          Engineering bulletproof reliability for complex software platforms.
+        </h1>
+        <p class="text-slate-400 text-base sm:text-xl font-normal leading-relaxed pt-2 max-w-3xl">
+          Hi, I'm <strong class="text-white font-semibold">Giuseppe Catanese</strong>. Over the last 16+ years, I’ve led QA and automated validation across core banking integration engines, real-time message brokers, high-concurrency sports betting, and global telecommunications hardware.
+        </p>
+
+        <!-- Command Bar / Quick CTAs -->
+        <div class="pt-4 flex flex-wrap items-center gap-3 font-mono text-xs">
+          <a href="mailto:catanese.giuseppe@gmail.com" class="px-4 py-2.5 rounded-lg bg-surface-card border border-surface-border hover:border-accent-cyan text-white transition flex items-center gap-2">
+            <i class="fa-regular fa-envelope text-accent-cyan"></i>
+            <span>catanese.giuseppe@gmail.com</span>
+          </a>
+          <a href="https://www.linkedin.com/in/giuseppe-c-7791891a/" target="_blank" rel="noopener noreferrer" class="px-4 py-2.5 rounded-lg bg-surface-card border border-surface-border hover:border-accent-sky text-slate-300 hover:text-white transition flex items-center gap-2">
+            <i class="fa-brands fa-linkedin text-accent-sky"></i>
+            <span>LinkedIn Profile</span>
+          </a>
+          <button onclick="copyTerminalCommand()" id="copy-cmd-btn" class="px-3.5 py-2.5 rounded-lg bg-surface-card border border-surface-border hover:border-slate-500 text-slate-400 hover:text-slate-200 transition flex items-center gap-2" title="Copy CLI summary">
+            <i class="fa-solid fa-copy text-accent-amber"></i>
+            <span id="copy-cmd-text">npx giuseppe-qa</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Top Bento Metrics Grid -->
+    <section id="overview" class="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <div class="bento-card p-5 rounded-xl flex flex-col justify-between">
+        <span class="font-mono text-xs text-slate-400 flex items-center justify-between">
+          <span>EXPERIENCE</span>
+          <i class="fa-regular fa-clock text-accent-cyan"></i>
+        </span>
+        <div class="mt-4">
+          <div class="text-3xl sm:text-4xl font-extrabold text-white font-mono">16+</div>
+          <div class="text-xs text-slate-400 mt-1">Years in Software QA & TLC</div>
+        </div>
+      </div>
+
+      <div class="bento-card p-5 rounded-xl flex flex-col justify-between">
+        <span class="font-mono text-xs text-slate-400 flex items-center justify-between">
+          <span>GOVERNANCE</span>
+          <i class="fa-solid fa-shield-halved text-accent-emerald"></i>
+        </span>
+        <div class="mt-4">
+          <div class="text-3xl sm:text-4xl font-extrabold text-accent-emerald font-mono">100%</div>
+          <div class="text-xs text-slate-400 mt-1">Audit-Ready Regression Gates</div>
+        </div>
+      </div>
+
+      <div class="bento-card p-5 rounded-xl flex flex-col justify-between">
+        <span class="font-mono text-xs text-slate-400 flex items-center justify-between">
+          <span>DOMAINS</span>
+          <i class="fa-solid fa-cubes text-accent-sky"></i>
+        </span>
+        <div class="mt-4">
+          <div class="text-3xl sm:text-4xl font-extrabold text-white font-mono">4</div>
+          <div class="text-xs text-slate-400 mt-1">Banking, Telecom, Betting, Apps</div>
+        </div>
+      </div>
+
+      <div class="bento-card p-5 rounded-xl flex flex-col justify-between">
+        <span class="font-mono text-xs text-slate-400 flex items-center justify-between">
+          <span>TEST ENGINES</span>
+          <i class="fa-solid fa-microchip text-accent-amber"></i>
+        </span>
+        <div class="mt-4">
+          <div class="text-3xl sm:text-4xl font-extrabold text-accent-amber font-mono">6+</div>
+          <div class="text-xs text-slate-400 mt-1">Tosca, Playwright, Karate, etc.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Bento Grid: Deep Core Capabilities -->
+    <section id="architecture" class="space-y-4">
+      <div class="flex items-center justify-between">
+        <h2 class="text-sm font-mono uppercase tracking-wider text-accent-cyan flex items-center gap-2">
+          <span>[02]</span> Core Architecture & Domain Impact
+        </h2>
+        <span class="font-mono text-xs text-slate-500">Bento Overview</span>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-4">
+
+        <!-- Card 1: Enterprise Banking (Large Featured Card, 7 cols) -->
+        <div class="md:col-span-7 bento-card p-6 sm:p-7 rounded-2xl flex flex-col justify-between relative overflow-hidden">
+          <div class="absolute -right-8 -top-8 w-44 h-44 bg-accent-sky/5 rounded-full blur-3xl pointer-events-none"></div>
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="px-2.5 py-1 rounded bg-sky-500/10 text-accent-sky border border-sky-500/20 font-mono text-[11px] font-medium">
+                Current Focus &bull; Mission Critical
+              </span>
+              <span class="font-mono text-xs text-slate-400">Fincons Group / Viseca</span>
+            </div>
+            <h3 class="text-xl sm:text-2xl font-bold text-white mb-2">
+              ADOPT Banking Integration Platform
+            </h3>
+            <p class="text-sm text-slate-300 leading-relaxed mb-5">
+              Safeguarding payment reliability and regulatory compliance across card emissions, GwG/AML anti-money laundering frameworks, real-time fraud mitigation, and digital wallets for Swiss banking institutions.
+            </p>
+
+            <!-- Architectural Highlights List -->
+            <div class="space-y-2.5 text-xs text-slate-300 font-mono mb-6">
+              <div class="flex items-start gap-2">
+                <span class="text-accent-cyan font-bold">&rarr;</span>
+                <span><strong>Tricentis Tosca Automation:</strong> Reusable execution modules, API Scan, and structured Test Data Management (TDM).</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <span class="text-accent-emerald font-bold">&rarr;</span>
+                <span><strong>RabbitMQ Message Queues:</strong> Asynchronous event injection, message correlation, exchange validation.</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <span class="text-accent-amber font-bold">&rarr;</span>
+                <span><strong>Kubernetes Cloud Migration:</strong> Validating zero functional regression and routing continuity during pod cutovers.</span>
+              </div>
+              <div class="flex items-start gap-2">
+                <span class="text-accent-sky font-bold">&rarr;</span>
+                <span><strong>Splunk Distributed Telemetry:</strong> Root Cause Analysis (RCA) correlating transactions across API Gateway and backends.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap gap-1.5 font-mono text-[11px] pt-4 border-t border-surface-border">
+            <span class="px-2 py-0.5 rounded bg-surface-card text-slate-300 border border-surface-borderSubtle">Tricentis Tosca</span>
+            <span class="px-2 py-0.5 rounded bg-surface-card text-slate-300 border border-surface-borderSubtle">RabbitMQ</span>
+            <span class="px-2 py-0.5 rounded bg-surface-card text-slate-300 border border-surface-borderSubtle">Splunk</span>
+            <span class="px-2 py-0.5 rounded bg-surface-card text-slate-300 border border-surface-borderSubtle">Kubernetes</span>
+            <span class="px-2 py-0.5 rounded bg-surface-card text-slate-300 border border-surface-borderSubtle">Swagger REST</span>
+            <span class="px-2 py-0.5 rounded bg-surface-card text-slate-300 border border-surface-borderSubtle">Xray Jira</span>
+          </div>
+        </div>
+
+        <!-- Card 2: Test Automation Arsenal (5 cols) -->
+        <div class="md:col-span-5 bento-card p-6 sm:p-7 rounded-2xl flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="px-2.5 py-1 rounded bg-accent-cyan/10 text-accent-cyan border border-accent-cyan/20 font-mono text-[11px]">
+                Automation Arsenal
+              </span>
+              <i class="fa-solid fa-code text-slate-500"></i>
+            </div>
+            <h3 class="text-lg sm:text-xl font-bold text-white mb-2">
+              Multi-Language Automation
+            </h3>
+            <p class="text-xs text-slate-400 mb-4 leading-relaxed">
+              Tailoring test runners to application architecture—from modern async web clients to native mobile engines and lightweight API DSLs.
+            </p>
+
+            <div class="space-y-3 font-mono text-xs">
+              <div class="p-2.5 rounded-lg bg-surface-card border border-surface-border flex justify-between items-center">
+                <span class="text-slate-300 font-semibold">Playwright & Cypress</span>
+                <span class="text-accent-cyan text-[11px]">JS / TypeScript</span>
+              </div>
+              <div class="p-2.5 rounded-lg bg-surface-card border border-surface-border flex justify-between items-center">
+                <span class="text-slate-300 font-semibold">Selenium WebDriver</span>
+                <span class="text-accent-sky text-[11px]">Java / TestNG</span>
+              </div>
+              <div class="p-2.5 rounded-lg bg-surface-card border border-surface-border flex justify-between items-center">
+                <span class="text-slate-300 font-semibold">Karate DSL & Postman</span>
+                <span class="text-accent-emerald text-[11px]">API Contracts</span>
+              </div>
+              <div class="p-2.5 rounded-lg bg-surface-card border border-surface-border flex justify-between items-center">
+                <span class="text-slate-300 font-semibold">Appium Mobile</span>
+                <span class="text-accent-amber text-[11px]">iOS & Android</span>
+              </div>
+              <div class="p-2.5 rounded-lg bg-surface-card border border-surface-border flex justify-between items-center">
+                <span class="text-slate-300 font-semibold">Behave / Cucumber</span>
+                <span class="text-accent-violet text-[11px]">Python BDD</span>
+              </div>
+            </div>
+          </div>
+          <div class="mt-4 pt-3 border-t border-surface-border text-[11px] font-mono text-slate-400 flex items-center justify-between">
+            <span>CI/CD Integration</span>
+            <span class="text-accent-emerald">Docker &bull; Jenkins &bull; Git</span>
+          </div>
+        </div>
+
+        <!-- Card 3: Four Core Domains (6 cols) -->
+        <div class="md:col-span-6 bento-card p-6 rounded-2xl flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-2.5 py-1 rounded bg-accent-amber/10 text-accent-amber border border-accent-amber/20 font-mono text-[11px]">
+                Business Context
+              </span>
+              <span class="font-mono text-xs text-slate-500">Cross-Industry</span>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2">Four Proven Industry Domains</h3>
+            <p class="text-xs text-slate-400 mb-4 leading-relaxed">
+              Testing software where failure is not an option—handling regulated transactions, live sports bets, and massive user traffic.
+            </p>
+
+            <div class="grid grid-cols-2 gap-2.5 font-mono text-xs">
+              <div class="p-3 rounded-lg bg-surface-card border border-surface-border">
+                <div class="text-accent-cyan font-bold mb-1"><i class="fa-solid fa-building-columns mr-1.5"></i>Banking & Pay</div>
+                <div class="text-[11px] text-slate-400">Viseca & Fincons: emissions, GwG compliance, fraud detection.</div>
+              </div>
+              <div class="p-3 rounded-lg bg-surface-card border border-surface-border">
+                <div class="text-accent-emerald font-bold mb-1"><i class="fa-solid fa-dice mr-1.5"></i>Betting / Sports</div>
+                <div class="text-[11px] text-slate-400">Eurobet: omni-channel SSBT terminals, live odds concurrency.</div>
+              </div>
+              <div class="p-3 rounded-lg bg-surface-card border border-surface-border">
+                <div class="text-accent-sky font-bold mb-1"><i class="fa-solid fa-tower-cell mr-1.5"></i>Telecom & 4G/LTE</div>
+                <div class="text-[11px] text-slate-400">Cobham & BlackBerry: 3GPP signaling, TM500 test units.</div>
+              </div>
+              <div class="p-3 rounded-lg bg-surface-card border border-surface-border">
+                <div class="text-accent-violet font-bold mb-1"><i class="fa-solid fa-mobile-screen mr-1.5"></i>Consumer Apps</div>
+                <div class="text-[11px] text-slate-400">ByteDance & Vodafone: scale mobile apps and media feeds.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4: Protocol & Deep Hardware Roots (6 cols) -->
+        <div class="md:col-span-6 bento-card p-6 rounded-2xl flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-2.5 py-1 rounded bg-accent-violet/10 text-accent-violet border border-accent-violet/20 font-mono text-[11px]">
+                Low-Level Foundations
+              </span>
+              <span class="font-mono text-xs text-slate-500">Radio & Hardware QA</span>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2">Deep Protocol & Telecom Roots</h3>
+            <p class="text-xs text-slate-400 mb-4 leading-relaxed">
+              Unlike purely frontend testers, my background is grounded in telecommunications engineering, signal processing, and low-level protocol diagnostics.
+            </p>
+
+            <ul class="space-y-2 text-xs text-slate-300 font-mono">
+              <li class="flex items-start gap-2">
+                <span class="text-accent-violet">&bull;</span>
+                <span><strong>BlackBerry 10 OS & Qualcomm:</strong> Interoperability testing (IOT) analyzing radio layer logs using Qualcomm QXDM, QPST, and Wireshark.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-accent-violet">&bull;</span>
+                <span><strong>Cobham TM500 & eNodeB:</strong> Stress and regression validation against live Ericsson & NSN base stations.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-accent-violet">&bull;</span>
+                <span><strong>Simulators & Instruments:</strong> Rhode & Schwarz CMW500, Agilent 8960, and Rogowski current probes.</span>
+              </li>
+            </ul>
+          </div>
+          <div class="mt-4 pt-3 border-t border-surface-border text-[11px] font-mono text-slate-400">
+            Education: M.Sc. in Telecommunications & Electronics (Università Roma Tre)
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Comprehensive Testing Arsenal Tab/Group -->
+    <section id="arsenal" class="space-y-4">
+      <div class="flex items-center justify-between">
+        <h2 class="text-sm font-mono uppercase tracking-wider text-accent-cyan flex items-center gap-2">
+          <span>[03]</span> Complete Technical Stack
+        </h2>
+        <span class="font-mono text-xs text-slate-500">Tools & Methodologies</span>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <!-- Col 1 -->
+        <div class="bento-card p-5 rounded-xl">
+          <div class="font-mono text-xs text-accent-cyan font-bold mb-3 flex items-center gap-2">
+            <i class="fa-solid fa-vial"></i> TEST AUTOMATION & CODE
+          </div>
+          <div class="flex flex-wrap gap-1.5 font-mono text-xs">
+            <span class="px-2.5 py-1 rounded bg-surface-card border border-surface-border text-slate-200">Tricentis Tosca</span>
+            <span class="px-2.5 py-1 rounded bg-surface-card border border-surface-border text-slate-200">Playwright (JS)</span>
+            <span class="px-2.5 py-1 rounded bg-surface-card border border-surface-border text-slate-200">Cypress (TS)</span>
+            <span class="px-2.5 py-1 rounded bg-surface-card border border-surface-border text-slate-200">Selenium (Java)</span>
+            <span class="px-2.5 py-1 rounded bg-surface-card border border-surface-border text-slate-200">Karate DSL</span>
+            <span class="px-2.5 py-1 rounded bg-surface-card border border-surface-border text-slate-200">Appium Mobile</span>
+            <span class="px-2.5 py-1 rounded bg-surface-card border border-surface-border text-slate-200">Behave (Python)</span>
+            <span class="px-2.5 py-1 rounded bg-surface-card border border-surface-border text-slate-200">Cucumber Gherkin</span>
+            <span class="px-2.5 py-1 rounded bg-surface-card border border-surface-border text-slate-200">TestNG / JUnit</span>
+            <span class="px-2.5 py-1 rounded bg-surface-card border border-surface-border text-slate-200">Robot Framework</span>
+          </div>
+        </div>
+
+        <!-- Col 2 -->
+        <div class="bento-card p-5 rounded-xl">
+          <div class="font-mono text-xs text-accent-emerald font-bold mb-3 flex items-center gap-2">
+            <i class="fa-solid fa-server"></i> API, QUEUES & CLOUD
+          </div>
+          <div class="flex flex-wrap gap-1.5 font-mono text-xs">
+            <span class="px-2.5 py-1 rounded bg-surface-card border border-surface-border text-slate-200">RabbitMQ Queues</span>
+            <span class="px-2.5 py-1 rounded bg-surface-card border border-surface-border text-slate-200">REST APIs / Swagger</span>
+            <span class="px-2.5 py-1 rounded bg-surface-card border border-surface-border text-slate-200">Postman (Scripts/Newman)</span>
+            <span class="px-2.5 py-1 rounded bg-surface-card border border-surface-border text-slate-200">Splunk Log Triage</span>
+            <span class="px-2.5 py-1 rounded bg-surface-card border border-surface-border text-slate-200">Kubernetes Pods</span>
+            <span class="px-2.5 py-1 rounded bg-surface-card border border-surface-border text-slate-200">Docker Scaling</span>
+            <span class="px-2.5 py-1 rounded bg-surface-card border border-surface-border text-slate-200">Jenkins CI/CD</span>
+            <span class="px-2.5 py-1 rounded bg-surface-card border border-surface-border text-slate-200">Apache JMeter</span>
+            <span class="px-2.5 py-1 rounded bg-surface-card border border-surface-border text-slate-200">Rest Assured</span>
+            <span class="px-2.5 py-1 rounded bg-surface-card border border-surface-border text-slate-200">SoapUI</span>
+          </div>
+        </div>
+
+        <!-- Col 3 -->
+        <div class="bento-card p-5 rounded-xl">
+          <div class="font-mono text-xs text-accent-sky font-bold mb-3 flex items-center gap-2">
+            <i class="fa-solid fa-list-check"></i> GOVERNANCE & PROTOCOLS
+          </div>
+          <div class="flex flex-wrap gap-1.5 font-mono text-xs">
+            <span class="px-2.5 py-1 rounded bg-surface-card border border-surface-border text-slate-200">Xray for Jira</span>
+            <span class="px-2.5 py-1 rounded bg-surface-card border border-surface-border text-slate-200">TestRail</span>
+            <span class="px-2.5 py-1 rounded bg-surface-card border border-surface-border text-slate-200">HP ALM Quality Center</span>
+            <span class="px-2.5 py-1 rounded bg-surface-card border border-surface-border text-slate-200">Redmine</span>
+            <span class="px-2.5 py-1 rounded bg-surface-card border border-surface-border text-slate-200">Boundary Value Analysis</span>
+            <span class="px-2.5 py-1 rounded bg-surface-card border border-surface-border text-slate-200">Equivalence Partitioning</span>
+            <span class="px-2.5 py-1 rounded bg-surface-card border border-surface-border text-slate-200">Qualcomm QXDM / QPST</span>
+            <span class="px-2.5 py-1 rounded bg-surface-card border border-surface-border text-slate-200">Wireshark</span>
+            <span class="px-2.5 py-1 rounded bg-surface-card border border-surface-border text-slate-200">Rohde & Schwarz CMW500</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Timeline Section -->
+    <section id="experience" class="space-y-6">
+      <div class="flex items-center justify-between">
+        <h2 class="text-sm font-mono uppercase tracking-wider text-accent-cyan flex items-center gap-2">
+          <span>[04]</span> Professional Career Path
+        </h2>
+        <span class="font-mono text-xs text-slate-500">2008 &mdash; Present</span>
+      </div>
+
+      <div class="space-y-4">
+
+        <!-- Role 1: Fincons Group / Viseca -->
+        <div class="bento-card p-6 rounded-2xl border-l-4 border-l-accent-cyan">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-2">
+            <div class="flex flex-wrap items-center gap-2">
+              <h3 class="text-base sm:text-lg font-bold text-white">Senior QA / Test Engineer</h3>
+              <span class="font-mono text-[11px] px-2 py-0.5 rounded bg-sky-500/10 text-accent-sky border border-sky-500/20">Client: Viseca</span>
+            </div>
+            <span class="font-mono text-xs text-accent-cyan font-semibold">10/2024 &mdash; PRESENT</span>
+          </div>
+          <div class="text-xs font-mono text-slate-400 mb-3">Fincons Group &bull; Lugano, Ticino, Switzerland</div>
+          <p class="text-sm text-slate-300 leading-relaxed mb-3">
+            Contributing to the quality, resilience, and regulatory compliance of banking and payment services within the <strong>ADOPT integration platform</strong> for Viseca.
+          </p>
+          <ul class="text-xs text-slate-300 space-y-1.5 font-mono list-disc list-inside mb-4">
+            <li>Designing and executing automated regression tests with <strong>Tricentis Tosca</strong> (Commander & API Scan) utilizing structured test data management (TDM).</li>
+            <li>Validating <strong>RabbitMQ</strong> event-driven microservices: event injection, payload contract validation, and cross-service message correlation.</li>
+            <li>Conducting distributed transaction tracing and root cause analysis across the API Gateway and backend nodes using <strong>Splunk</strong>.</li>
+            <li>Verifying workloads migration to <strong>Kubernetes</strong> clusters ensuring configuration integrity and zero functional disruption.</li>
+            <li>Managing test plans, test runs, and audit-compliant execution evidence in <strong>Jira & Xray</strong> across card issuing, GwG/AML compliance, and fraud squads.</li>
+          </ul>
+          <div class="flex flex-wrap gap-1 font-mono text-[10px] text-slate-400">
+            <span class="px-2 py-0.5 rounded bg-surface-card border border-surface-border">Tricentis Tosca</span>
+            <span class="px-2 py-0.5 rounded bg-surface-card border border-surface-border">RabbitMQ</span>
+            <span class="px-2 py-0.5 rounded bg-surface-card border border-surface-border">Splunk</span>
+            <span class="px-2 py-0.5 rounded bg-surface-card border border-surface-border">Kubernetes</span>
+            <span class="px-2 py-0.5 rounded bg-surface-card border border-surface-border">REST APIs / Swagger</span>
+            <span class="px-2 py-0.5 rounded bg-surface-card border border-surface-border">Xray Jira</span>
+          </div>
+        </div>
+
+        <!-- Role 2: QA North America & Intuition IT -->
+        <div class="bento-card p-6 rounded-2xl">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-2">
+            <h3 class="text-base sm:text-lg font-bold text-white">Quality Assurance Lead / Senior QA Automation Engineer</h3>
+            <span class="font-mono text-xs text-slate-400">08/2021 &mdash; 10/2024</span>
+          </div>
+          <div class="text-xs font-mono text-slate-400 mb-3">QA North America & Intuition IT &bull; Mendrisio, Switzerland</div>
+          <p class="text-sm text-slate-300 leading-relaxed mb-3">
+            Promoted from Senior QA Engineer to QA Lead, directing automation framework architecture and quality deliverables for corporate clients in Switzerland.
+          </p>
+          <ul class="text-xs text-slate-300 space-y-1.5 font-mono list-disc list-inside mb-4">
+            <li>Engineered modern E2E automation suites utilizing <strong>Playwright (JavaScript)</strong> and <strong>Cypress (TypeScript)</strong>.</li>
+            <li>Implemented automated API validation with <strong>Karate DSL (Java)</strong> and <strong>Postman</strong> with assertion scripts integrated into Jenkins CI/CD.</li>
+            <li>Standardized test governance, defect management, and execution traceability inside <strong>TestRail</strong> and <strong>Jira</strong>.</li>
+          </ul>
+          <div class="flex flex-wrap gap-1 font-mono text-[10px] text-slate-400">
+            <span class="px-2 py-0.5 rounded bg-surface-card border border-surface-border">Playwright</span>
+            <span class="px-2 py-0.5 rounded bg-surface-card border border-surface-border">Cypress</span>
+            <span class="px-2 py-0.5 rounded bg-surface-card border border-surface-border">Karate DSL</span>
+            <span class="px-2 py-0.5 rounded bg-surface-card border border-surface-border">Jenkins</span>
+            <span class="px-2 py-0.5 rounded bg-surface-card border border-surface-border">TestRail</span>
+          </div>
+        </div>
+
+        <!-- Role 3: ByteDance -->
+        <div class="bento-card p-6 rounded-2xl">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-2">
+            <h3 class="text-base sm:text-lg font-bold text-white">Quality Assurance Engineer</h3>
+            <span class="font-mono text-xs text-slate-400">12/2020 &mdash; 11/2022</span>
+          </div>
+          <div class="text-xs font-mono text-slate-400 mb-2">ByteDance &bull; Remote</div>
+          <p class="text-sm text-slate-300 leading-relaxed mb-3">
+            Executed high-volume automated and manual QA verification across consumer mobile ecosystems serving millions of daily active users.
+          </p>
+          <ul class="text-xs text-slate-300 space-y-1 font-mono list-disc list-inside">
+            <li>Automated mobile test cases via <strong>Appium</strong> across fragmented Android and iOS device matrices.</li>
+            <li>Monitored network payloads and cache behaviors using Charles Proxy; logged and triaged defects in Jira.</li>
+          </ul>
+        </div>
+
+        <!-- Role 4: Vodafone & Havn -->
+        <div class="bento-card p-6 rounded-2xl">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-2">
+            <h3 class="text-base sm:text-lg font-bold text-white">Quality Assurance Engineer</h3>
+            <span class="font-mono text-xs text-slate-400">01/2020 &mdash; 07/2021</span>
+          </div>
+          <div class="text-xs font-mono text-slate-400 mb-2">Vodafone & Havn SuperApp &bull; Milan, Italy / Remote</div>
+          <p class="text-sm text-slate-300 leading-relaxed mb-2">
+            Validated customer-facing telecom billing services and multi-service urban mobility apps; automated REST API validation with Postman and schema tests.
+          </p>
+        </div>
+
+        <!-- Role 5: Eurobet Italia -->
+        <div class="bento-card p-6 rounded-2xl">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-2">
+            <h3 class="text-base sm:text-lg font-bold text-white">IT Quality Assurance Analyst</h3>
+            <span class="font-mono text-xs text-slate-400">01/2018 &mdash; 01/2020</span>
+          </div>
+          <div class="text-xs font-mono text-slate-400 mb-2">Eurobet Italia srl &bull; Rome, Italy</div>
+          <p class="text-sm text-slate-300 leading-relaxed mb-3">
+            Confirmation and dynamic regression testing across sports betting portals, apps, and Self-Service Betting Terminals (SSBT) in Agile sprints.
+          </p>
+          <ul class="text-xs text-slate-300 space-y-1 font-mono list-disc list-inside">
+            <li>Designed tests via Boundary Value Analysis (BVA), Equivalence Partitioning, and State Transitions.</li>
+            <li>Automated functional tests using <strong>Selenium WebDriver (Java)</strong>, <strong>TestNG</strong>, and <strong>Behave (Python/Gherkin)</strong>.</li>
+            <li>Executed high-concurrency stress testing with <strong>Apache JMeter</strong> to ensure uptime during top-tier football matches.</li>
+          </ul>
+        </div>
+
+        <!-- Role 6: ALTEN / TAS Group -->
+        <div class="bento-card p-6 rounded-2xl">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-2">
+            <h3 class="text-base sm:text-lg font-bold text-white">Senior Test Engineer & SDET Consultant</h3>
+            <span class="font-mono text-xs text-slate-400">10/2016 &mdash; 12/2017</span>
+          </div>
+          <div class="text-xs font-mono text-slate-400 mb-1">ALTEN Italia &bull; TAS Group &bull; Philmark Informatica &bull; Rome, Italy</div>
+          <p class="text-xs text-slate-300">Test management and automated verification for enterprise banking software using HP ALM Quality Center and TestLink.</p>
+        </div>
+
+        <!-- Role 7: Cobham Wireless -->
+        <div class="bento-card p-6 rounded-2xl">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-2">
+            <h3 class="text-base sm:text-lg font-bold text-white">MRAT / RAV Test Engineer</h3>
+            <span class="font-mono text-xs text-slate-400">11/2015 &mdash; 09/2016</span>
+          </div>
+          <div class="text-xs font-mono text-slate-400 mb-1">Cobham Wireless &bull; Stevenage, Hertfordshire, United Kingdom</div>
+          <p class="text-xs text-slate-300">Validated the Aeroflex/Cobham TM500 LTE/WCDMA cellular mobile test product line against live Ericsson and NSN eNodeB stations.</p>
+        </div>
+
+        <!-- Role 8: BlackBerry -->
+        <div class="bento-card p-6 rounded-2xl">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-2">
+            <h3 class="text-base sm:text-lg font-bold text-white">IOT Specialist (Interoperability & Protocol Testing)</h3>
+            <span class="font-mono text-xs text-slate-400">07/2013 &mdash; 11/2015</span>
+          </div>
+          <div class="text-xs font-mono text-slate-400 mb-1">BlackBerry &bull; Slough, England, United Kingdom</div>
+          <p class="text-xs text-slate-300">Carrier air-interface testing on BlackBerry 10 devices (LTE/UMTS); root cause analysis with Qualcomm QXDM, QPST, and Wireshark directly with Qualcomm designers.</p>
+        </div>
+
+        <!-- Consolidated Early Years -->
+        <div class="bento-card p-5 rounded-2xl bg-surface-card/60">
+          <div class="font-mono text-xs text-slate-400 mb-2 font-bold uppercase tracking-wider">// Foundational Engineering (2008 &mdash; 2013)</div>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs font-mono text-slate-300">
+            <div class="p-3 rounded-lg bg-surface-card border border-surface-border">
+              <span class="text-white font-bold block mb-1">Sielte Spa (2010-13)</span>
+              Railway VoIP/Hirschmann networks, 3GPP LTE protocol analysis, test scripts in C/C++ and Perl.
+            </div>
+            <div class="p-3 rounded-lg bg-surface-card border border-surface-border">
+              <span class="text-white font-bold block mb-1">Linkem (2009-10)</span>
+              WiMAX drive tests, RSSI measurements, Huawei M2000 logs, MATLAB simulation.
+            </div>
+            <div class="p-3 rounded-lg bg-surface-card border border-surface-border">
+              <span class="text-white font-bold block mb-1">Roma Tre Univ. (2008-10)</span>
+              Automated measurement lab, Rogowski probes, Visual Basic, and spectrum analysis.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Certifications & Credentials Bento -->
+    <section id="badges" class="space-y-4">
+      <div class="flex items-center justify-between">
+        <h2 class="text-sm font-mono uppercase tracking-wider text-accent-cyan flex items-center gap-2">
+          <span>[05]</span> Verified Badges & Academic Foundation
+        </h2>
+        <span class="font-mono text-xs text-slate-500">Accreditations</span>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        
+        <!-- Certifications -->
+        <div class="md:col-span-2 bento-card p-6 rounded-2xl">
+          <h3 class="font-mono text-xs text-accent-cyan font-bold uppercase mb-4 flex items-center gap-2">
+            <i class="fa-solid fa-certificate"></i> Industry Certifications
+          </h3>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs font-mono">
+            <div class="p-3 rounded-lg bg-surface-card border border-surface-border flex items-center justify-between">
+              <div>
+                <div class="font-bold text-white">ISTQB® CTFL</div>
+                <div class="text-[10px] text-slate-400">Foundation Level Tester</div>
+              </div>
+              <span class="text-accent-emerald text-xs"><i class="fa-solid fa-circle-check"></i></span>
+            </div>
+            <div class="p-3 rounded-lg bg-surface-card border border-surface-border flex items-center justify-between">
+              <div>
+                <div class="font-bold text-white">Scaling Tests with Docker</div>
+                <div class="text-[10px] text-slate-400">Containerized QA Environments</div>
+              </div>
+              <span class="text-accent-emerald text-xs"><i class="fa-solid fa-circle-check"></i></span>
+            </div>
+            <div class="p-3 rounded-lg bg-surface-card border border-surface-border flex items-center justify-between">
+              <div>
+                <div class="font-bold text-white">Scrum Fundamentals (SFC)</div>
+                <div class="text-[10px] text-slate-400">Agile Process & Squad Delivery</div>
+              </div>
+              <span class="text-accent-emerald text-xs"><i class="fa-solid fa-circle-check"></i></span>
+            </div>
+            <div class="p-3 rounded-lg bg-surface-card border border-surface-border flex items-center justify-between">
+              <div>
+                <div class="font-bold text-white">Remote BDD Testing</div>
+                <div class="text-[10px] text-slate-400">Behavior-Driven Development</div>
+              </div>
+              <span class="text-accent-emerald text-xs"><i class="fa-solid fa-circle-check"></i></span>
+            </div>
+            <div class="p-3 rounded-lg bg-surface-card border border-surface-border flex items-center justify-between sm:col-span-2">
+              <div>
+                <div class="font-bold text-white">LTE for IOT Tester</div>
+                <div class="text-[10px] text-slate-400">Radio Signaling & Interoperability</div>
+              </div>
+              <span class="text-accent-emerald text-xs"><i class="fa-solid fa-circle-check"></i></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Academic & Languages -->
+        <div class="bento-card p-6 rounded-2xl flex flex-col justify-between">
+          <div>
+            <h3 class="font-mono text-xs text-accent-sky font-bold uppercase mb-4 flex items-center gap-2">
+              <i class="fa-solid fa-graduation-cap"></i> Education & Languages
+            </h3>
+            <div class="text-xs font-mono space-y-3 mb-6">
+              <div>
+                <div class="text-white font-bold">M.Sc. Telecommunications & Electronics</div>
+                <div class="text-slate-400 text-[11px]">Università Roma Tre (2007&mdash;2010)</div>
+              </div>
+              <div>
+                <div class="text-white font-bold">B.A.Sc. Mathematics & CS</div>
+                <div class="text-slate-400 text-[11px]">Liceo Aristotele (1999&mdash;2004)</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-4 border-t border-surface-border">
+            <span class="font-mono text-[10px] text-slate-400 uppercase block mb-2">Spoken Languages:</span>
+            <div class="flex flex-wrap gap-1.5 font-mono text-xs">
+              <span class="px-2 py-0.5 rounded bg-surface-card border border-surface-border text-accent-cyan">Italian (Native)</span>
+              <span class="px-2 py-0.5 rounded bg-surface-card border border-surface-border text-accent-cyan">English (Fluent)</span>
+              <span class="px-2 py-0.5 rounded bg-surface-card border border-surface-border text-slate-300">Lithuanian</span>
+              <span class="px-2 py-0.5 rounded bg-surface-card border border-surface-border text-slate-400">RU / FR / ES</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Call To Action & Footer Contact Box -->
+    <section id="contact" class="bento-card p-8 sm:p-12 rounded-3xl text-center relative overflow-hidden">
+      <div class="max-w-2xl mx-auto space-y-4">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent-emerald/10 border border-accent-emerald/20 text-accent-emerald font-mono text-xs">
+          <span class="w-2 h-2 rounded-full bg-accent-emerald animate-ping"></span>
+          <span>AVAILABLE FOR LEADERSHIP & ARCHITECTURAL ROLES</span>
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+          Ready to elevate your engineering quality standards?
+        </h2>
+        <p class="text-sm text-slate-400 leading-relaxed font-normal">
+          Whether you need to scale automated regression, validate complex API event architectures, or ensure zero disruption across migrations, let's talk.
+        </p>
+
+        <div class="pt-4 flex flex-col sm:flex-row items-center justify-center gap-3 font-mono text-xs">
+          <a href="mailto:catanese.giuseppe@gmail.com" class="w-full sm:w-auto px-6 py-3 rounded-xl bg-accent-sky text-void font-bold hover:bg-sky-300 transition flex items-center justify-center gap-2 shadow-lg shadow-accent-sky/20">
+            <i class="fa-regular fa-envelope"></i>
+            <span>catanese.giuseppe@gmail.com</span>
+          </a>
+          <a href="https://www.linkedin.com/in/giuseppe-c-7791891a/" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto px-6 py-3 rounded-xl bg-surface-card border border-surface-border hover:border-slate-500 text-white transition flex items-center justify-center gap-2">
+            <i class="fa-brands fa-linkedin text-accent-sky"></i>
+            <span>Connect on LinkedIn</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Technical Dev-Style Footer -->
+  <footer class="border-t border-surface-borderSubtle py-8 text-center text-xs font-mono text-slate-500">
+    <div class="max-w-6xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-2">
+        <span class="w-2 h-2 rounded-full bg-accent-cyan"></span>
+        <span>Giuseppe Catanese &bull; 2026 Personal Portfolio</span>
+      </div>
+      <div>
+        <span>Built with HTML5, Tailwind CSS, Jamstack Architecture</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Micro-Interactions Script -->
+  <script>
+    function copyTerminalCommand() {
+      const command = "npx giuseppe-qa";
+      
+      // Fallback-safe clipboard copy
+      const tempInput = document.createElement("input");
+      tempInput.value = command;
+      document.body.appendChild(tempInput);
+      tempInput.select();
+      document.execCommand("copy");
+      document.body.removeChild(tempInput);
+
+      const textSpan = document.getElementById("copy-cmd-text");
+      const originalText = textSpan.innerText;
+      textSpan.innerText = "COPIED TO CLIPBOARD!";
+      textSpan.classList.add("text-accent-emerald");
+
+      setTimeout(() => {
+        textSpan.innerText = originalText;
+        textSpan.classList.remove("text-accent-emerald");
+      }, 2000);
+    }
+  </script>
+</body>
+</html>
